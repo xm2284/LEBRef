@@ -73,4 +73,4 @@ This regenerates the post-hoc diagnostic outputs, not the main training results.
 
 ## Status
 
-This repository is the public code and reproducibility companion for the manuscript. Before creating a DOI archive, add the final license file selected by the authors and, if needed, attach large non-Git artifacts through GitHub Releases, Zenodo, or another controlled artifact host.
+This repository is the public code and reproducibility companion for the manuscript. The code is released under the MIT License. Before creating a DOI archive, attach any large non-Git artifacts, if needed, through GitHub Releases, Zenodo, or another controlled artifact host.
