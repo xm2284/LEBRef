@@ -1,0 +1,51 @@
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+*.pyc
+*.pyo
+*.pyd
+
+# Local environments
+.env
+.venv/
+venv/
+env/
+conda-env/
+
+# Raw datasets and derived caches are not distributed in Git.
+data/
+datasets/
+artifacts/
+outputs/
+checkpoints/
+feature_cache/
+*.pth
+*.pt
+*.ckpt
+*.joblib
+*.npy
+*.npz
+*.pkl
+
+# Logs and temporary files
+*.log
+nohup.out
+tmp/
+zipcheck*/
+pdfqa*/
+~$*
+
+# Private manuscript and review material
+*comment*
+*comments*
+*review*
+*advisor*
+*private*
+*secret*
+
+# Large archives should be attached as releases, not committed.
+*.zip
+*.tar
+*.tar.gz
+*.tgz

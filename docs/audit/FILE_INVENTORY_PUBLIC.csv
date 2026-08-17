@@ -1,0 +1,28 @@
+category,path,public_release,notes
+source,src/core/esra_core.py,yes,Core frozen-head experiment utilities
+source,src/core/v6_run_experiment.py,yes,V6 experiment entry point
+source,src/external/run_locked_external.py,yes,Locked external validation entry point
+source,src/external/prepare_data.py,yes,Dataset archive verification and extraction helper
+source,src/linear_event/linear_event_core_v9.py,yes,Linear event-bag refinement core implementation
+reproduce,scripts/reproduce/run_experiment_v9.py,yes,V9 subject-independent experiment runner
+analysis,scripts/analysis/negative_gradient_diagnostic.py,yes,Negative-bag gradient diagnostic script
+analysis,scripts/analysis/pr_operating_curve_analysis.py,yes,Alarm-segment PR and recall-duty analysis script
+analysis,scripts/analysis/age_group_analysis.py,yes,Age-group exploratory analysis script
+analysis,scripts/analysis/motion_intensity_analysis.py,yes,Motion-intensity exploratory analysis script
+analysis,scripts/analysis/make_final_report.py,yes,V19 report aggregation script
+protocol,docs/protocols/PROTOCOL_V6.md,yes,Historical locked protocol note
+protocol,docs/protocols/PROTOCOL_V9.md,yes,Linear-event protocol note
+protocol,docs/protocols/PROTOCOL_V10.md,yes,Follow-up protocol note
+protocol,docs/protocols/FINAL_PROTOCOL_V19.md,yes,Final closure protocol note
+results,results/released_summary/KNOWN_RESULTS.json,yes,Small reference-result summary
+results,results/released_summary/v19_closure/negative_gradient_subject_equal_summary.csv,yes,Released negative-gradient summary table
+results,results/released_summary/v19_closure/alarm_segment_pr_and_burden_curves.csv,yes,Released PR/burden curve table
+results,results/released_summary/v19_closure/motion_intensity_tercile_summary.csv,yes,Released motion-intensity group summary
+results,results/released_summary/v19_closure/motion_intensity_correlation.csv,yes,Released motion-intensity correlation summary
+tests,tests/test_synthetic.py,yes,Synthetic smoke test for public package
+config,configs/smartfallmm_fold_lock.json,yes,Locked subject folds for SmartFallMM
+config,configs/umafall_fold_lock.json,yes,Locked subject folds for UMAFall
+artifact,data/,no,Raw datasets should be provided by users under original licenses
+artifact,artifacts/checkpoints/,no,Pretrained and downstream checkpoints are excluded
+artifact,artifacts/feature_cache/,no,Feature caches are excluded and can be regenerated
+private,manuscript_pdfs_and_comments,no,Private drafts and teacher comments are excluded

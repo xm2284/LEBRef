@@ -1,0 +1,7 @@
+{
+  "state": "complete",
+  "analysis": "subject-level motion-intensity heterogeneity, no retraining",
+  "primary_intensity_metric": "median across non-fall trials of RMS deviation of acceleration vector magnitude from its trial median",
+  "terciles": "dataset-specific subject-level terciles computed before looking at alarm outcomes",
+  "caution": "Exploratory heterogeneity analysis; movement intensity is an accelerometer-derived proxy, not a clinical activity-intensity label."
+}

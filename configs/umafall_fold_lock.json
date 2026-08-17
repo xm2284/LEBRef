@@ -1,0 +1,27 @@
+{
+  "version": "umafall_fivefold_subject_lock_v1_20260724",
+  "seed": 20260724,
+  "stratification": "fixed-seed shuffle within fall-containing and ADL-only subject strata",
+  "folds": [
+    {
+      "fall_subjects": ["subject_07", "subject_18", "subject_17"],
+      "adl_only_subjects": ["subject_10"]
+    },
+    {
+      "fall_subjects": ["subject_19", "subject_04", "subject_06"],
+      "adl_only_subjects": ["subject_01"]
+    },
+    {
+      "fall_subjects": ["subject_08", "subject_05", "subject_16"],
+      "adl_only_subjects": ["subject_03"]
+    },
+    {
+      "fall_subjects": ["subject_11", "subject_02"],
+      "adl_only_subjects": ["subject_09", "subject_13"]
+    },
+    {
+      "fall_subjects": ["subject_15", "subject_14"],
+      "adl_only_subjects": ["subject_12"]
+    }
+  ]
+}

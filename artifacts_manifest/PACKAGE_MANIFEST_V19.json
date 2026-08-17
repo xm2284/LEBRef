@@ -1,0 +1,25 @@
+{
+  "state": "ok",
+  "files": {
+    "README.md": "44689592be41079e620565f6febbbc905015ad4f19a8cffb66f9628fa5401f03",
+    "FINAL_PROTOCOL_V19.md": "9a1bb19bddffec5b7a70d0a151fe8e59692845dee6ef17a5a792c1a742a060ef",
+    "run_final_closure.sh": "43c54f8066aadf9007030f0326e49f12f1b29c1cb872d1599072a16b236f407a",
+    "requirements_no_torch.txt": "581dc594fb4d40418901d245a3832a5a146d73d43b2409d173b5d3a231f3e2d8",
+    "scripts/common.py": "1524e8665019fdd22c22e1bca73f05a680542ff432dcb1d98a5136d888e6004b",
+    "scripts/negative_gradient_diagnostic.py": "dbbfbb553dd01ec415191ddbc79386a0b2c9ccea199bc244f31ead76d3e5a17c",
+    "scripts/age_group_analysis.py": "8c2d0450fbbe1eb501ecfec15e8a3317dfaf1de26885145de6ace043584ccb48",
+    "scripts/motion_intensity_analysis.py": "b5662fb19f6770c4e84c65ff906e6f7243b5311a971fdace09e91d7f11d7f061",
+    "scripts/pr_operating_curve_analysis.py": "7926ac735d384e0a12e600ca9047153af2ea75635239e82b90510ae9edff2719",
+    "scripts/make_final_report.py": "e2e1fd30ee871fe33cea3874e15fbf2fd4010a5f56f03d2937ec8db1549c075a",
+    "scripts/archive_results.sh": "28482fb75ae84d8ee3a86cd74e6da06a61096b353b4057547c6b8ab30d7b9773",
+    "reference_results/KNOWN_RESULTS.json": "4f355864565aaa0e91680e0521b2307963428f73d1b1b83f4bd1999c37a0d889",
+    "embedded_sources/linear_event_core_v9.py": "382859c3ccee6052537b10e73afa601701df1f793bd6ca19f9bd0182a3647cc0",
+    "embedded_sources/run_experiment_v9.py": "d970953d76cb0567b00c575b2548f87a4f190103dbfe52f5f2c3cc273a215ee4",
+    "embedded_sources/fall_esra_head_v6_20260724.zip": "bb0035c3f8bdf812e6fd39d63e7bcf1e7c526dd6b508407dbc811a7fabbda595",
+    "embedded_sources/fall_lea_aggregation_baselines_v17_exactv9_20260810.zip": "9e4596a17f324582ef690cb28bc53d005b2681605ab2294d693fe07b1666832d",
+    "embedded_sources/fall_lea_v18_statistical_closure_20260810.zip": "676af8d87ec40ae22e3623816ecdc8b9e04fd03adf2149802d9f3fbde673a584",
+    "embedded_results/05_实验结果.zip": "e9a2857ae333bc1f5e0e3fb77e312a9915661a155e5772a280ac57cee14b5d9a",
+    "embedded_results/fall_lea_mechanism_decomposition_v13_results.tar.gz": "84fbe0cee13b98ac2b1076f6f07eda42c0bd0ee9cb85dedd52d65fe1cef87243",
+    "embedded_results/fall_lea_capacity_control_v14_results.tar.gz": "27b57143343e43e5e6f67fa0900b28b5527acad75fec6ee92f7682db58dbe9d2"
+  }
+}

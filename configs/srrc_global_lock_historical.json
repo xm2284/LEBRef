@@ -1,0 +1,19 @@
+{
+  "selection_protocol": "one global parameter set selected from all WEDA validation subjects and seeds",
+  "target_validation_recall": 0.95,
+  "source": "WEDA-FALL validation only; HIFD, UMAFall, and SmartFallMM are locked external validations and are not used for parameter selection",
+  "methods": {
+    "fixed_0.5": {
+      "params": {"tau_on": 0.5, "tau_off": 0.5, "k": 1, "refractory": 2.0}
+    },
+    "max_f1": {
+      "params": {"tau_on": 0.85, "tau_off": 0.85, "k": 1, "refractory": 2.0}
+    },
+    "sensitivity_constrained": {
+      "params": {"tau_on": 0.9, "tau_off": 0.9, "k": 1, "refractory": 2.0}
+    },
+    "srrc": {
+      "params": {"tau_on": 0.85, "tau_off": 0.75, "k": 3, "refractory": 2.0}
+    }
+  }
+}

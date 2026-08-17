@@ -1,0 +1,26 @@
+{
+  "version": "smartfallmm_fivefold_subject_lock_v1_20260724",
+  "seed": 20260724,
+  "folds": [
+    {
+      "young": ["young_S62", "young_S32", "young_S46", "young_S38", "young_S63", "young_S44", "young_S58"],
+      "old": ["old_S12", "old_S16", "old_S21", "old_S03", "old_S09"]
+    },
+    {
+      "young": ["young_S50", "young_S51", "young_S56", "young_S39", "young_S35", "young_S43", "young_S61"],
+      "old": ["old_S08", "old_S14", "old_S07", "old_S26", "old_S02"]
+    },
+    {
+      "young": ["young_S36", "young_S52", "young_S57", "young_S34", "young_S45", "young_S53"],
+      "old": ["old_S19", "old_S05", "old_S18", "old_S13", "old_S17"]
+    },
+    {
+      "young": ["young_S59", "young_S54", "young_S48", "young_S60", "young_S55", "young_S28"],
+      "old": ["old_S01", "old_S11", "old_S22", "old_S15", "old_S23"]
+    },
+    {
+      "young": ["young_S29", "young_S30", "young_S31", "young_S37", "young_S33", "young_S49"],
+      "old": ["old_S47", "old_S25", "old_S06", "old_S10", "old_S04"]
+    }
+  ]
+}
