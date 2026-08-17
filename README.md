@@ -28,7 +28,6 @@ src/
 scripts/
   reproduce/     main V9 training entry point
   analysis/      V19 no-retraining diagnostics
-  figures/       figure scripts to be completed/curated
 configs/         fold locks and protocol configs
 results/
   released_summary/
@@ -74,4 +73,4 @@ This regenerates the post-hoc diagnostic outputs, not the main training results.
 
 ## Status
 
-This folder is a GitHub-ready staging package. Before public release, choose a license and attach large artifacts through GitHub Releases or Hugging Face.
+This repository is the public code and reproducibility companion for the manuscript. Before creating a DOI archive, add the final license file selected by the authors and, if needed, attach large non-Git artifacts through GitHub Releases, Zenodo, or another controlled artifact host.
