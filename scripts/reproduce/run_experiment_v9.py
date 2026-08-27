@@ -137,7 +137,7 @@ def load_v6(args: argparse.Namespace) -> tuple[Any, Any, Any]:
 def config(args: argparse.Namespace) -> dict[str, Any]:
     return {
         "version": "fall_linear_event_adapter_v9_20260728",
-        "protocol_sha256": sha256(PACKAGE_DIR / "PROTOCOL_V9.md"),
+        "protocol_sha256": sha256(REPO_ROOT / "docs" / "protocols" / "PROTOCOL_V9.md"),
         "dataset": args.dataset,
         "epochs": args.epochs,
         "steps_per_epoch": args.steps_per_epoch,

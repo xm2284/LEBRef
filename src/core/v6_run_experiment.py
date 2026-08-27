@@ -17,16 +17,17 @@ import esra_core as core
 
 
 PACKAGE_DIR = Path(__file__).resolve().parent
+REPO_ROOT = PACKAGE_DIR.parents[1]
 DATASET_CONFIG = {
     "smartfallmm": {
         "legacy_module": "legacy_smartfallmm",
-        "fold_lock": PACKAGE_DIR / "configs" / "smartfallmm_fold_lock.json",
-        "legacy_results": PACKAGE_DIR / "legacy_results" / "smartfallmm",
+        "fold_lock": REPO_ROOT / "configs" / "smartfallmm_fold_lock.json",
+        "legacy_results": REPO_ROOT / "artifacts" / "v6_legacy_results" / "smartfallmm",
     },
     "umafall": {
         "legacy_module": "legacy_umafall",
-        "fold_lock": PACKAGE_DIR / "configs" / "umafall_fold_lock.json",
-        "legacy_results": PACKAGE_DIR / "legacy_results" / "umafall",
+        "fold_lock": REPO_ROOT / "configs" / "umafall_fold_lock.json",
+        "legacy_results": REPO_ROOT / "artifacts" / "v6_legacy_results" / "umafall",
     },
 }
 VARIANTS = ("event_mil", "event_duty", "event_duty_cvar", "esra_full")
@@ -85,7 +86,7 @@ def resolve_args(args: argparse.Namespace) -> argparse.Namespace:
         setattr(args, name, getattr(args, name).resolve())
     args.fold_lock = DATASET_CONFIG[args.dataset]["fold_lock"].resolve()
     args.legacy_results = DATASET_CONFIG[args.dataset]["legacy_results"].resolve()
-    args.protocol = (PACKAGE_DIR / "PROTOCOL_V6.md").resolve()
+    args.protocol = (REPO_ROOT / "docs" / "protocols" / "PROTOCOL_V6.md").resolve()
     args.protocol_sha256 = file_sha256(args.protocol)
     if args.bootstrap_iterations < 1000:
         raise ValueError("bootstrap iterations must be at least 1000")

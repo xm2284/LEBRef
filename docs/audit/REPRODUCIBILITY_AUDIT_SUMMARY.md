@@ -40,9 +40,9 @@ See `docs/DATA_AND_ARTIFACTS.md` for the expected artifact layout.
 
 ## Current audit decision
 
-The staged repository is suitable as a GitHub reproducibility skeleton. It is
-not intended to include all historical V1--V19 intermediate folders. Instead,
-it preserves the reusable source code, locked protocols, final diagnostic
-scripts, and small summary results needed for readers to understand and rerun
-the final experiments when the external datasets and checkpoints are provided.
-
+The public repository is suitable as the reproducibility companion for the
+Pervasive and Mobile Computing manuscript. It is not intended to include all
+historical V1--V19 intermediate folders. Instead, it preserves the reusable
+source code, locked protocols, final diagnostic scripts, and small summary
+results needed for readers to understand and rerun the final experiments when
+the external datasets and checkpoints are provided.
