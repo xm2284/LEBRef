@@ -33,7 +33,8 @@ jobs:
           URL="https://${USER}:${{ secrets.GITEE_TOKEN }}@gitee.com/${USER}/${REPO}.git"
           git remote remove gitee 2>/dev/null || true
           git remote add gitee "$URL"
-          git push --mirror gitee
+          # 只推送分支与 tag，避免把 refs/remotes/* 当成 hidden ref 推送而被拒绝
+          git push --prune gitee "+refs/heads/*:refs/heads/*" "+refs/tags/*:refs/tags/*"
 
       - name: Sync description and project labels to Gitee
         if: always()
