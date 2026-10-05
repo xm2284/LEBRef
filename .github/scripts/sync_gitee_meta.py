@@ -10,32 +10,52 @@
 只做两件事：
   1. PATCH Gitee 仓库 description
   2. PUT   Gitee 仓库 project_labels（用 GitHub topics 覆盖）
-失败只记录，不中断工作流。
+网络偶发失败会自动重试；始终不中断工作流。
 """
 
 import json
 import os
+import time
 import urllib.error
 import urllib.request
 
 
+def _retry(fn, attempts: int = 3, delay: float = 3.0):
+    last = None
+    for i in range(attempts):
+        try:
+            return fn()
+        except Exception as e:  # noqa: BLE001
+            last = e
+            print(f"  重试 {i + 1}/{attempts}: {e}")
+            time.sleep(delay)
+    raise last
+
+
 def _get(url: str, headers: dict) -> dict:
-    req = urllib.request.Request(url, headers=headers)
-    with urllib.request.urlopen(req, timeout=30) as r:
-        return json.load(r)
+    def _do():
+        req = urllib.request.Request(url, headers=headers)
+        with urllib.request.urlopen(req, timeout=30) as r:
+            return json.load(r)
+
+    return _retry(_do)
 
 
 def _send(method: str, url: str, data: dict) -> tuple[int, str]:
     body = json.dumps(data).encode("utf-8")
-    req = urllib.request.Request(
-        url,
-        data=body,
-        headers={"Content-Type": "application/json"},
-        method=method,
-    )
-    try:
+
+    def _do():
+        req = urllib.request.Request(
+            url,
+            data=body,
+            headers={"Content-Type": "application/json"},
+            method=method,
+        )
         with urllib.request.urlopen(req, timeout=30) as r:
             return r.status, r.read().decode("utf-8", "replace")
+
+    try:
+        return _retry(_do)
     except urllib.error.HTTPError as e:
         return e.code, e.read().decode("utf-8", "replace")
 
